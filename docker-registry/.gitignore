@@ -1,0 +1,4 @@
+config.ign
+config.ign.merged
+*.img
+*.vmdk
