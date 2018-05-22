@@ -24,7 +24,7 @@ IGNITION_CONFIG_PATH = File.join(File.dirname(__FILE__), "config.ign")
 $hostname = "registry"
 $share_home = false
 $vm_gui = false
-$vm_memory = 1024
+$vm_memory = 512
 $vm_cpus = 1
 $shared_folders = {}
 $forwarded_ports = { "5000" => "5000" }
