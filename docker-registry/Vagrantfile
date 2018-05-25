@@ -29,6 +29,10 @@ $vm_cpus = 1
 $shared_folders = {}
 $forwarded_ports = { "5000" => "5000" }
 
+if ARGV[0] == 'up'
+  system("ct -platform=vagrant-virtualbox -in-file cl.conf -out-file config.ign")
+end
+
 Vagrant.configure("2") do |config|
   # always use Vagrants insecure key
   config.ssh.insert_key = false
